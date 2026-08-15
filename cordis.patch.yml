@@ -1,3 +1,10 @@
 - insert:
-    - id: plugin-starter
+    - id: browser-cdp
       name: dsh-plugin-starter
+      config:
+        cdpEndpoint: http://127.0.0.1:9222
+        allowedHosts:
+          - joyspace.jd.com
+        navigationTimeoutMs: 30000
+        waitAfterLoadMs: 1500
+        maxChars: 20000

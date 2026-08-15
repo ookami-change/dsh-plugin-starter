@@ -1,18 +1,28 @@
 {
   "name": "dsh-plugin-starter",
-  "version": "0.1.0",
-  "description": "Minimal installable plugin starter for DeepSeek Harness.",
+  "version": "0.2.0",
+  "description": "A host-allowlisted CDP browser-reading tool for DeepSeek Harness.",
   "type": "module",
   "main": "index.js",
   "files": [
     "index.js",
     "cordis.patch.yml"
   ],
+  "scripts": {
+    "test": "node --test"
+  },
   "keywords": [
     "deepseek-harness",
-    "dsh-plugin"
+    "dsh-plugin",
+    "browser",
+    "cdp"
   ],
   "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/dsh-tools": "^0.0.1-rc.1",
+    "@deepseek-ai/schemastery": "^3.18.1-rc.1",
+    "chrome-remote-interface": "^0.34.0"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
